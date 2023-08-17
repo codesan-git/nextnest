@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "pnpm run --parallel dev",
-    "build": "pnpm run --parallel build"
+    "build": "pnpm run --parallel dev",
+    "start:server": "pnpm --filter server start:prod",
+    "start:web": "pnpm --filter web start"
   },
   "keywords": [],
   "author": "",
