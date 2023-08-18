@@ -3,6 +3,7 @@ import { Mail, Bell, BarChart, Home, MoreVertical, ChevronLast, ChevronFirst } f
 import { createContext, useState } from "react"
 import Link from 'next/link'
 import { useSelectedLayoutSegment } from 'next/navigation'
+import Image from 'next/image'
 
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
@@ -23,11 +24,13 @@ export default function Sidebar() {
         <aside className="h-screen">
             <nav className="h-full flex flex-col bg-white border-r shadow-sm">
                 <div className="p-4 pb-2 flex justify-between items-center">
-                    <img
+                    <Image
                         src="https://img.logoipsum.com/265.svg"
+                        alt="Logo"
+                        width={1500}
+                        height={1500}
                         className={`overflow-hidden transition-all ${expanded ? "w-32" : "w-0"
                             }`}
-                        alt=""
                     />
                     <button
                         onClick={() => setExpanded((curr) => !curr)}
@@ -49,9 +52,11 @@ export default function Sidebar() {
                 </ul>
 
                 <div className="border-t flex p-3">
-                    <img
+                    <Image
                         src="https://github.com/codesan-git.png"
-                        alt=""
+                        alt="Account Image"
+                        width={1500}
+                        height={1500}
                         className="w-10 h-10 rounded-md"
                     />
                     <div
