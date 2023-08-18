@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import { INestApplication, Injectable } from '@nestjs/common';
 import { TrpcService } from '@server/trpc/trpc.service';
 import { z } from 'zod';

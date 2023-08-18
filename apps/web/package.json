@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.18",
     "@trpc/client": "^10.37.1",
     "@trpc/server": "^10.37.1",
     "@types/node": "^20.3.1",
