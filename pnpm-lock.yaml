@@ -101,9 +101,6 @@ importers:
 
   apps/web:
     dependencies:
-      '@heroicons/react':
-        specifier: ^2.0.18
-        version: 2.0.18(react@18.2.0)
       '@trpc/client':
         specifier: ^10.37.1
         version: 10.37.1(@trpc/server@10.37.1)
@@ -131,6 +128,9 @@ importers:
       eslint-config-next:
         specifier: 13.4.17
         version: 13.4.17(eslint@8.42.0)(typescript@5.1.3)
+      lucide-react:
+        specifier: ^0.268.0
+        version: 0.268.0(react@18.2.0)
       next:
         specifier: 13.4.17
         version: 13.4.17(react-dom@18.2.0)(react@18.2.0)
@@ -596,14 +596,6 @@ packages:
   /@eslint/js@8.42.0:
     resolution: {integrity: sha512-6SWlXpWU5AvId8Ac7zjzmIOqMOba/JWY8XZ4A7q7Gn1Vlfg/SFFIlrtHXt9nPn4op9ZPAkl91Jao+QQv3r/ukw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-
-  /@heroicons/react@2.0.18(react@18.2.0):
-    resolution: {integrity: sha512-7TyMjRrZZMBPa+/5Y8lN0iyvUU/01PeMGX2+RE7cQWpEUIcb4QotzUObFkJDejj/HUH4qjP/eQ0gzzKs2f+6Yw==}
-    peerDependencies:
-      react: '>= 16'
-    dependencies:
-      react: 18.2.0
-    dev: false
 
   /@humanwhocodes/config-array@0.11.10:
     resolution: {integrity: sha512-KVVjQmNUepDVGXNuoRRdmmEjruj0KfiGSbS8LVc12LMsWDQzRXJ0qdhN8L8uUigKpfEHRhlaQFY0ib1tnUbNeQ==}
@@ -4610,6 +4602,14 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
+
+  /lucide-react@0.268.0(react@18.2.0):
+    resolution: {integrity: sha512-XP/xY3ASJAViqNqVnDRcEfdxfRB7uNST8sqTLwZhL983ikmHMQ7qQak7ZxrnXOVhB3QDBawdr3ANq0P+iWHP/g==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /macos-release@2.5.1:
     resolution: {integrity: sha512-DXqXhEM7gW59OjZO8NIjBCz9AQ1BEMrfiOAl4AYByHCtVHRF4KoGNO8mqQeM8lRCtQe/UnJ4imO/d2HdkKsd+A==}

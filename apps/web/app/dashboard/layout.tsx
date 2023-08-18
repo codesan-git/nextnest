@@ -8,9 +8,9 @@ type Props = {
 const layout = (props: Props) => {
   return (
     <div className='flex mx-auto w-full'>
-        <div>
+        <aside>
             <Sidebar />
-        </div>
+        </aside>
         <main className='w-full'>
             {props.children}
         </main>
