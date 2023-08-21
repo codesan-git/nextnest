@@ -6,6 +6,14 @@ const nextConfig = {
             protocol: 'https',
             hostname: 'github.com',
           },
+          {
+            protocol: 'https',
+            hostname: 'assets.pokemon.com'
+          },
+          {
+            protocol: 'https',
+            hostname: 'pokeapi.co'
+          }
         ],
       },
 }

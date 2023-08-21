@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import TestLoading from './testLoading'
 
 interface PageProps {
 
@@ -10,6 +11,7 @@ const Page: FC<PageProps> = ({ }) => {
             <div className='mx-auto max-w-2xl text-center'>
                 <h2 className='mt-2 text-4xl font-bold tracking-tight text-gray-900 md:text-6xl'>Dashboard/Analytics</h2>
             </div>
+            <TestLoading />
         </div>
     )
 }
